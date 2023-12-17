@@ -1,15 +1,12 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
-import DefaultNavbar from '@/components/Navbar/DefaultNavbar';
 import { cn } from '@/lib/utils';
 import Sidebar from '@/components/Sidebar/Sidebar';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Logo } from '@/components/Header/Logo';
 
 export const metadata: Metadata = {
-  title: 'Tramona',
-  description: 'Tramona: A Next.js starter template',
+  title: 'Tramona: Messages',
+  description: 'Tramona: Messages',
 };
 
 export default function RootLayout({
@@ -19,11 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn(inter.className)}>
-        <header className="border-b-2 border-[rgba(0,0,0,0.25)] shadow-sm">
-          <DefaultNavbar />
+      <body>
+        <header className="shadow-sm h-screen w-32 bg-black">
+          <Sidebar />
         </header>
-        {/* <Sidebar /> */}
         {children}
       </body>
     </html>
