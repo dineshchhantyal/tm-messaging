@@ -1,7 +1,20 @@
 import React from 'react';
+import MessagePreviewCard from './MessagePreviewCard';
 
 const MessagesListing = () => {
-  return <div>MessagesListing</div>;
+  return (
+    <div>
+      {messagesListing.map((message) => (
+        <MessagePreviewCard
+          name={message.name}
+          time={message.time}
+          tag={message.tag}
+          message={message.message}
+          profilePhoto={message.profilePhoto}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default MessagesListing;
