@@ -12,6 +12,7 @@ const MessagesListing = () => {
           message={message.message}
           profilePhoto={message.profilePhoto}
           userId={message.userId}
+          key={message.userId}
         />
       ))}
     </div>

@@ -13,13 +13,14 @@ import {
   Settings,
 } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Sidebar = () => {
   const pathname = usePathname();
   console.log(pathname);
   return (
     <nav className="border-white flex flex-col items-center">
-      <div className="p-7 border-b-2 w-full grid place-items-center">
+      <Link href="/" className="p-7 border-b-2 w-full grid place-items-center">
         <Image
           alt="Homepage"
           src={'/logo.png'}
@@ -27,7 +28,7 @@ const Sidebar = () => {
           width={'38'}
         ></Image>
         <Logo className="text-white hidden" />
-      </div>
+      </Link>
       {/* nav */}
 
       <div className="flex flex-col w-full mt-4 items-center">
@@ -51,31 +52,31 @@ const navItems = [
   {
     logo: <LayoutDashboard className="w-7 h-7" />,
     title: 'Dashboard',
-    link: 'dashboard',
+    link: '/dashboard',
   },
   {
     logo: <GitPullRequestArrow className="w-7 h-7" />,
     title: 'Incoming Requests',
-    link: 'incoming-requests',
+    link: '/incoming-requests',
   },
   {
     logo: <List className="w-7 h-7" />,
     title: 'Your Listings',
-    link: 'listings',
+    link: '/listings',
   },
   {
     logo: <MessageSquareMore className="w-7 h-7" />,
     title: 'Messaging',
-    link: 'messages',
+    link: '/messages',
   },
   {
     logo: <Layers3Icon className="w-7 h-7" />,
     title: 'Resource/ How To',
-    link: 'resources',
+    link: '/resources',
   },
   {
     logo: <Settings className="w-7 h-7" />,
     title: 'Settings',
-    link: 'settings',
+    link: '/settings',
   },
 ];

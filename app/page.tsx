@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Link href={'/messages'}>
-        <Button variant="secondary">Messages</Button>
+        <Button variant="destructive">Messages</Button>
       </Link>
     </main>
   );
