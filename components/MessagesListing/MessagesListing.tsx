@@ -11,6 +11,7 @@ const MessagesListing = () => {
           tag={message.tag}
           message={message.message}
           profilePhoto={message.profilePhoto}
+          userId={message.userId}
         />
       ))}
     </div>
@@ -72,6 +73,7 @@ const messagesListing = [
     message:
       'Hi, I’m interested in your place. Is it available for the dates I’m looking for?',
     profilePhoto: randomAvatar(),
+    userId: 'kelsey-m',
   },
   {
     name: 'Oaityn Calzoni',
@@ -79,14 +81,16 @@ const messagesListing = [
     tag: 'Seattle, $116/night, 8/07/23-8/09/23',
     message: 'Your place looks like a delightful spot...',
     profilePhoto: randomAvatar(),
+    userId: 'oaityn-calzoni',
   },
   {
     name: 'Kelsey M.',
     time: '2:30 PM',
-    tag: 'San Francisco, $123/night, 8/13/23-8/15/23',
+    tag: 'San Jose, $122/night, 8/13/23-8/15/23',
     message:
       'Hi, I’m interested in your place. Is it available for the dates I’m looking for?',
     profilePhoto: randomAvatar(),
+    userId: 'kelsey-m11',
   },
 
   {
@@ -95,5 +99,6 @@ const messagesListing = [
     tag: 'Seattle, $116/night, 8/07/23-8/09/23',
     message: 'Your place looks like a delightful spot...',
     profilePhoto: randomAvatar(),
+    userId: 'zain-curtis',
   },
 ];
