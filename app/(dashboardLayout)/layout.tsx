@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex">
         <header className="shadow-sm h-screen w-32 bg-black">
           <Sidebar />
         </header>

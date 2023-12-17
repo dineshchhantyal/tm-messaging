@@ -20,8 +20,8 @@ const NavItem = ({
   return (
     <Link
       className={cn(
-        'text-gray-400 p-5 cursor-pointer hover:text-gray-200 ',
-        active ? 'text-white' : '',
+        'text-gray-400 p-5 cursor-pointer hover:text-gray-200 w-full flex items-center justify-center',
+        active ? 'text-white border-l-4 border-blue-400' : '',
         className ?? '',
       )}
       href={link}

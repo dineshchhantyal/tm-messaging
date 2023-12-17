@@ -30,7 +30,7 @@ const Sidebar = () => {
       </div>
       {/* nav */}
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col w-full mt-4 items-center">
         {navItems.map((item) => (
           <NavItem
             logo={item.logo}

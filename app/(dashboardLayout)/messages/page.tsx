@@ -4,7 +4,7 @@ import React from 'react';
 
 const Messages = () => {
   return (
-    <div>
+    <div className="flex">
       <MessagesListing />
       <MessageTab />
     </div>
